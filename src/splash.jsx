@@ -1,6 +1,6 @@
 import React from 'react';
-import "./styles/styles.css";
-import SearchPhotos from ".src/search_sp"
+import "./styles.css";
+import SearchPhotos from "./search_sp.jsx"
 
 export default function Splash() {
   return (

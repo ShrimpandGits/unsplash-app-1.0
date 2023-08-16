@@ -5,7 +5,7 @@ const unsplashApiKey = process.env.REACT_APP_UNSPLASH_API_KEY;
 
 
 const unsplash = createApi({
-accessKey: 'ltSzFlqYETw_n4qPSUs2f_uHjMShHmNdqNgMoPcHOvY',
+accessKey: unsplashApiKey,
   });
 
 export default function SearchPhotos() {
