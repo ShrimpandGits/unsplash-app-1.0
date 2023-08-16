@@ -6,8 +6,6 @@ export default function Hi() {
   alert('egg');
   
   return (
-     <button onClick={Hi}>
-      Click me!
-    </button>    
+     console.log("hello world")  
   );
 }

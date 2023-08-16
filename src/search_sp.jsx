@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { createApi } from 'unsplash-js';
 import Draggable, { DraggableCore } from "react-draggable";
-//import Hi from './hi.jsx';
+import Hi from './hi.jsx';
 
 
 
@@ -17,16 +17,6 @@ accessKey: unsplashApiKey,
 
 
 
- function Hi() {
-  
-  alert('pics');
-  
-  return (
-     <button onClick={Hi}>
-      Click me!
-    </button>    
-  );
-}
 
 
 
@@ -98,7 +88,7 @@ export default function SearchPhotos() {
                 src={pic.urls.thumb}
                 width="50%"
                 height="50%"
-                onClick={Hi}
+                onClick={e => console.log(pic.urls.thumb)}
               ></img>
                    
                    
