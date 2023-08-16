@@ -1,9 +1,8 @@
 import React, {useState} from "react";
 import { createApi } from 'unsplash-js';
 import Draggable, { DraggableCore } from "react-draggable";
-import Hi from 'hi.jsx'
-
-
+import Hi from './hi.jsx';
+const egg = 'eggs are here'
 
 const unsplashApiKey = process.env.REACT_APP_UNSPLASH_API_KEY;
 const unsplash = createApi({
@@ -78,7 +77,7 @@ export default function SearchPhotos() {
       </form>
     
       <div className="sp_card-list">
-
+   
       
  {
           pics.map((pic) => <div className="sp_card">
@@ -88,7 +87,7 @@ export default function SearchPhotos() {
                 src={pic.urls.thumb}
                 width="50%"
                 height="50%"
-                
+                onClick={Hi}
               ></img>
                    
                    
