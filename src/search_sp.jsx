@@ -1,12 +1,24 @@
 import React, {useState} from "react";
 import { createApi } from 'unsplash-js';
 import Draggable, { DraggableCore } from "react-draggable";
+import Hi from 'hi.jsx'
+
+
+
 const unsplashApiKey = process.env.REACT_APP_UNSPLASH_API_KEY;
-
-
 const unsplash = createApi({
 accessKey: unsplashApiKey,
   });
+
+
+
+
+
+
+
+
+
+
 
 export default function SearchPhotos() {
  
@@ -62,9 +74,12 @@ export default function SearchPhotos() {
         <button type="sp_submit" className="sp_button">
           Search
         </button>
+   
       </form>
-    <div className="sp_card-list">
     
+      <div className="sp_card-list">
+
+      
  {
           pics.map((pic) => <div className="sp_card">
                    <img
@@ -73,6 +88,7 @@ export default function SearchPhotos() {
                 src={pic.urls.thumb}
                 width="50%"
                 height="50%"
+                
               ></img>
                    
                    
