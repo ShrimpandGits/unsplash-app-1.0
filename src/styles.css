@@ -104,7 +104,19 @@ END Glitch hello-app default styles
 /* Page structure */
 body {
   font-family: HK Grotesk;
-  
+  background-size: cover; /* This will make the background image cover the entire body */
+  background-repeat: no-repeat; /* This will prevent the image from repeating */
+  background: url(https://images.unsplash.com/photo-1489183988443-b37b7e119ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=100) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 900px rgba(27,27,27,10) inset;  
 }
 .wrapper {
   min-height: var(--wrapper-height);
@@ -174,17 +186,7 @@ h2 {
   color: #2800FF;
 }
 html { 
-  background: url(https://images.unsplash.com/photo-1489183988443-b37b7e119ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=100) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 800px rgba(27,27,27,10) inset;  
+  
 }
 
 .splash{

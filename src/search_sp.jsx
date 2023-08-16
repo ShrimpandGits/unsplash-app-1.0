@@ -90,7 +90,7 @@ export default function SearchPhotos() {
                 src={pic.urls.thumb}
                 width="50%"
                 height="50%"
-                onClick={e => document.body.style.backgroundImage = 'url'(backgroundImageURL)}
+                onClick={() => document.body.style.backgroundImage= `url('${pic.urls.regular}')`}
               ></img>
                    
                    
