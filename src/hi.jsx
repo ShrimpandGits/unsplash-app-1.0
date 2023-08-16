@@ -3,7 +3,7 @@ import pics from './search_sp.jsx';
 import egg from './search_sp.jsx';
 export default function Hi() {
   
-  alert(egg);
+  alert('egg');
   
   return (
      <button onClick={Hi}>

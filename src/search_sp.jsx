@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import { createApi } from 'unsplash-js';
 import Draggable, { DraggableCore } from "react-draggable";
-import Hi from './hi.jsx';
-const egg = 'eggs are here'
+//import Hi from './hi.jsx';
+
+
 
 const unsplashApiKey = process.env.REACT_APP_UNSPLASH_API_KEY;
 const unsplash = createApi({
@@ -16,6 +17,16 @@ accessKey: unsplashApiKey,
 
 
 
+ function Hi() {
+  
+  alert('pics');
+  
+  return (
+     <button onClick={Hi}>
+      Click me!
+    </button>    
+  );
+}
 
 
 
@@ -82,7 +93,7 @@ export default function SearchPhotos() {
  {
           pics.map((pic) => <div className="sp_card">
                    <img
-                className="card--image"
+                className="sp_card--image"
                 alt={pic.alt_description}
                 src={pic.urls.thumb}
                 width="50%"
