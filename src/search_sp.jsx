@@ -13,15 +13,6 @@ accessKey: unsplashApiKey,
   });
 
 
-
-
-
-
-
-
-
-
-
 export default function SearchPhotos() {
  
   
