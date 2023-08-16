@@ -239,24 +239,18 @@ html {
 
 .sp_card-list {
   column-count: 3;
-   width: 90%; /* Set the width of the image */
-    height: auto; /* Ensure the aspect ratio is maintained */
-    object-fit: cover; 
+  padding: 20px; /* Add padding to the container */
 }
 
 .sp_card {
     margin-bottom: 1rem;
-    width: 90%; /* Set the width of the image */
-    height: auto; /* Ensure the aspect ratio is maintained */
-    object-fit: cover; 
+    display: flex;
 }
 
 .sp_card--image {
-  
+    flex: 100%;
+    margin-top: 1rem;
     border-radius: 10px;
-    width: 90%; /* Set the width of the image */
-    height: auto; /* Ensure the aspect ratio is maintained */
-    object-fit: cover; /* This will make sure the image covers the entire container */
 }
 @media (min-width: 768px) {
   .form {
@@ -274,3 +268,4 @@ html {
         column-count: 1;
     }
 }
+
