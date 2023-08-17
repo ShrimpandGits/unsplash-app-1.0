@@ -6,7 +6,7 @@ export default function Splash() {
   return (
      <div className="splash">
       <div className="sp_container">
-        <h1 className="sp_title">focus space</h1>        
+        <h1 className="sp_title">image search</h1>        
         
         <SearchPhotos/>
       </div>

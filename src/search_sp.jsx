@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { createApi } from 'unsplash-js';
 import Draggable, { DraggableCore } from "react-draggable";
-import Hi from './hi.jsx';
+
 // Define your constant variable with the URL
 const backgroundImageURL = "https://images.unsplash.com/photo-1682685797857-97de838c192e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80";
 
@@ -34,9 +34,8 @@ export default function SearchPhotos() {
       console.log('error occurred: ', result.errors[0]);
     case 'success':
     setPics(result.response.results)
-    const photo = result.response.results//.results[0].urls.full;
-    //console.log(photo)
-    console.log(pics)
+    const photo = result.response.results
+    //console.log(pics)
   
     }
 })
